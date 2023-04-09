@@ -1,0 +1,16 @@
+.job-category-list{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(240, 240, 240);
+    padding: 20px;
+    margin: 5px 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.job-category-list img{
+    width: 50px;
+}
+.job-category-list h4{
+    margin-bottom: -10px;
+}

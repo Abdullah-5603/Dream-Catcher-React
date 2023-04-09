@@ -1,0 +1,89 @@
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+.statistics {
+    display: flex;
+    justify-content: space-between;
+}
+
+.appliedJobs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-img-1 {
+    width: 200px;
+    height: 200px;
+}
+
+.header-img-2 {
+    width: 200px;
+    height: 200px;
+}
+
+.navbar {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navbarS {
+    margin-top: -100px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.navbar-link {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-link {
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 30px;
+}
+
+.navbar-link div a {
+    margin: 0 5px;
+    padding: 5px;
+    text-decoration: none;
+    color: #757575;
+    font-size: 18px;
+}
+
+.navbar-link button {
+    font-size: 16px;
+    border: none;
+    padding: 15px 20px;
+    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+    border-radius: 8px;
+}
+
+.navbar-link div a:hover {
+    color: #6173ec;
+    transition: 0.5s;
+}
+
+.nav-tag {
+    font-weight: 700;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: -80px;
+}

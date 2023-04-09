@@ -1,0 +1,13 @@
+.job-category{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.job-category h1{
+    margin-bottom: -10px;
+}
+.job-category div{
+    display: flex;
+    
+}
