@@ -5,14 +5,33 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import Statistics from './Components/Statistics/Statistics';
+import AppliedJobs from './Components/AppliedJobs/AppliedJobs';
+import Blog from './Components/Blog/Blog';
+import Main from './Components/Layout/Main';
+import Header from './Components/Header/Header';
+
 
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <div>Hello world!</div>,
-  },
-]);
-
+    path: '/',
+    element: <Main></Main>,
+    children: [
+      {
+        path: 'statistics',
+        element: <Statistics></Statistics>
+      },
+      {
+        path: 'appliedJobs',
+        element: <AppliedJobs></AppliedJobs>
+      },
+      {
+        path: 'blog',
+        element: <Blog></Blog>
+      }
+    ]
+  }
+])
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <RouterProvider router={router} />
