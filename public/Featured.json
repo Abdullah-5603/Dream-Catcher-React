@@ -1,0 +1,112 @@
+[
+    {
+        "googleJob": {
+        "id": "GOOGLE123",
+        "companyLogo": "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
+        "jobTitle": "Software Engineer",
+        "companyName": "Google LLC",
+        "remoteOrOnsite": "Remote",
+        "location": "Any location",
+        "fullTimeOrPartTime": "Full-time",
+        "salary": "150k-200k",
+        "jobDescription": "We are seeking a skilled software engineer to join our team at Google LLC. The ideal candidate will have experience in developing and maintaining software applications, as well as a strong understanding of programming languages and development methodologies.",
+        "jobResponsibility": "Responsibilities include: designing and implementing software applications, testing and debugging code, collaborating with other engineers and stakeholders, and participating in code reviews.",
+        "educationalRequirements": "Bachelor's or Master's degree in Computer Science or a related field",
+        "experiences": "2+ years of software development experience, experience with programming languages such as Java or Python, experience with web application development and cloud technologies.",
+        "contactInformation": {
+            "phone": "555-555-5555",
+            "email": "recruiting@google.com"
+        }
+    },
+        "teslaJob": {
+        "id": "TESLA456",
+        "companyLogo": "https://www.tesla.com/sites/default/files/images/tesla_logo_social.jpg",
+        "jobTitle": "Electrical Engineer",
+        "companyName": "Tesla",
+        "remoteOrOnsite": "Onsite",
+        "location": "Fremont, California",
+        "fullTimeOrPartTime": "Part-Time",
+        "salary": "250k-300k",
+        "jobDescription": "We are seeking a skilled electrical engineer to join our team at Tesla. The ideal candidate will have experience in designing and testing electrical systems, as well as a strong understanding of electrical engineering principles and standards.",
+        "jobResponsibility": "Responsibilities include: designing and testing electrical systems for our vehicles, collaborating with other engineers and stakeholders, and participating in code reviews.",
+        "educationalRequirements": "Bachelor's or Master's degree in Electrical Engineering or a related field",
+        "experiences": "2+ years of electrical engineering experience, experience with designing and testing electrical systems, experience with vehicle systems and/or power electronics is a plus.",
+        "contactInformation": {
+            "phone": "555-555-5555",
+            "email": "recruiting@tesla.com"
+        }
+    },
+        "netflixJob": {
+        "id": "NETFLIX789",
+        "companyLogo": "https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg",
+        "jobTitle": "Senior Software Engineer",
+        "companyName": "Netflix",
+        "remoteOrOnsite": "Remote",
+        "location": "Any location",
+        "fullTimeOrPartTime": "Full-time",
+        "salary": "80k-120k",
+        "jobDescription": "We are seeking a skilled software engineer to join our team at Netflix. The ideal candidate will have experience in developing and maintaining large-scale distributed systems, as well as a strong understanding of programming languages and development methodologies.",
+        "jobResponsibility": "Responsibilities include: designing and implementing software applications, testing and debugging code, collaborating with other engineers and stakeholders, and participating in code reviews.",
+        "educationalRequirements": "Bachelor's or Master's degree in Computer Science or a related field",
+        "experiences": "5+ years of software development experience, experience with programming languages such as Java or Python, experience with cloud technologies and distributed systems is a plus.",
+        "contactInformation": {
+            "phone": "555-555-5555",
+            "email": "recruiting@netflix.com"
+        }
+    },
+        "microsoftJob": {
+            "id": "MICROSOFT123",
+            "companyLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Microsoft_logo.svg/1024px-Microsoft_logo.svg.png",
+            "jobTitle": "Senior Software Engineer",
+            "companyName": "Microsoft",
+            "remoteOrOnsite": "Remote",
+            "location": "Any location",
+            "fullTimeOrPartTime": "Full-time",
+            "salary": "200k-230k",
+            "jobDescription": "We are seeking a skilled software engineer to join our team at Microsoft. The ideal candidate will have experience in developing and maintaining large-scale distributed systems, as well as a strong understanding of programming languages and development methodologies.",
+            "jobResponsibility": "Responsibilities include: designing and implementing software applications, testing and debugging code, collaborating with other engineers and stakeholders, and participating in code reviews.",
+            "educationalRequirements": "Bachelor's or Master's degree in Computer Science or a related field",
+            "experiences": "5+ years of software development experience, experience with programming languages such as C++ or C#, experience with cloud technologies and distributed systems is a plus.",
+            "contactInformation": {
+                "phone": "555-555-5555",
+                "email": "recruiting@microsoft.com"
+            }
+        },
+        "appleJob": {
+            "id": "APPLE456",
+            "companyLogo": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg",
+            "jobTitle": "iOS Developer",
+            "companyName": "Apple",
+            "remoteOrOnsite": "Onsite",
+            "location": "Cupertino, CA",
+            "fullTimeOrPartTime": "Part-Time",
+            "salary": "150k-180k",
+            "jobDescription": "We are looking for an experienced iOS developer to join our team at Apple. The ideal candidate will have a strong background in iOS development, as well as a passion for delivering high-quality products to customers.",
+            "jobResponsibility": "Responsibilities include: developing and maintaining iOS applications, collaborating with cross-functional teams, and participating in code reviews.",
+            "educationalRequirements": "Bachelor's or Master's degree in Computer Science or a related field",
+            "experiences": "5+ years of experience in iOS development, proficiency in Swift or Objective-C, experience with version control systems such as Git.",
+            "contactInformation": {
+                "phone": "555-555-5555",
+                "email": "recruiting@apple.com"
+            }
+        },
+        "facebookJob": {
+            "id": "FACEBOOK789",
+            "companyLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/600px-Facebook_Logo_%282019%29.png",
+            "jobTitle": "Data Scientist",
+            "companyName": "Facebook",
+            "remoteOrOnsite": "Remote",
+            "location": "Any location",
+            "fullTimeOrPartTime": "Part-Time",
+            "salary": "70k-100k",
+            "jobDescription": "We are seeking a data scientist to join our team at Facebook. The ideal candidate will have a strong background in statistics, data analysis, and machine learning, as well as experience with programming languages such as Python or R.",
+            "jobResponsibility": "Responsibilities include: developing and implementing statistical models and machine learning algorithms, analyzing and interpreting data, and communicating findings to stakeholders.",
+            "educationalRequirements": "Master's or PhD in Statistics, Mathematics, Computer Science or a related field",
+            "experiences": "3+ years of experience in data science, proficiency in programming languages such as Python or R, experience with big data technologies such as Hadoop or Spark.",
+            "contactInformation": {
+                "phone": "555-555-5555",
+                "email": "recruiting@facebook.com"
+            }
+        }
+    }
+]
