@@ -8,7 +8,7 @@ const AppliedJobs = () => {
   const [remoteOrOnsiteJobs, setRemoteOrOnsiteJobs] = useState([]);
 
   const handleRemoteSort = (remote) => {
-    const jobs = data.filter((job) => job.remoteOrOnsite !== remote);
+    const jobs = data.filter((job) => job.remoteOrOnsite === remote);
     setRemoteOrOnsiteJobs(jobs);
     console.log(jobs)
   };
