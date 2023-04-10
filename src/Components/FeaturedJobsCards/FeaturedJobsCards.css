@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: flex-start;
     border: 2px solid gray;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 20px;
 }
 .job-info img{
@@ -13,11 +13,6 @@
 .job-info h3{
     margin: 10px 0 -12px 0;
 }
-/* .remote-fulltime-btns{
-    display: flex;
-    justify-content: space-between;
-    width: 40%;
-} */
 .remote-fulltime-btns button{
     border: 2px solid #7E90FE;
     border-radius: 10px;
@@ -43,9 +38,6 @@
     width: 20px;
     margin-right: 8px;
 }
-.view-btn{
-
-}
 .view-btn button{
     border: none;
     border-radius: 10px;
@@ -55,4 +47,34 @@
     padding: 15px 20px;
     background-color: #7E90FE;
     color: white;
+}
+@media (max-width: 576px) {
+    .job-info{
+        width: 100%;
+    }
+    .job-info img{
+        width: 80px;
+        height: 80px;
+    }
+    .remote-fulltime-btns button{
+        margin-top: -5px;
+        margin-left: 0;
+        margin-right: 10px;
+        font-size: 13px;
+        padding: 10px 15px;
+    }
+    .location{
+        margin-top: -10px;
+    }
+    .icon{
+        width: 15px;
+        margin-right: 4px;
+    }
+    .view-btn button{
+        margin-left: 0;
+        margin-bottom: 0;
+        font-size: 13px;
+        font-weight: 600;
+        padding: 10px 15px;
+    }
 }

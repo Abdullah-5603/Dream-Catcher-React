@@ -18,3 +18,23 @@
     background-color: #7E90FE;
     color: white;
 }
+@media (max-width: 576px) {
+    .featured h1{
+        font-size: 30px;
+    }
+    .featured p{
+        font-size: 15px;
+    }
+    .jobs-card{
+        margin-left: -8%;
+        width: 100%;
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+    .featured button{
+        font-size: 13px;
+    }
+
+}

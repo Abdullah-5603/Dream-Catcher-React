@@ -29,6 +29,35 @@
     height: 65px;
     left: 300px;
     top: 698px;
+    cursor: pointer;
     background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
     border-radius: 8px;
+}
+@media (max-width: 576px) {
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .header img{
+        width: 350px;
+        height: 300px;
+    }
+    .header-text{
+        width: 90%;
+        margin: 0 5%;
+    }
+    .header-text h1 {
+        font-weight: 800;
+        font-size: 30px;
+    }
+    
+    .header-text button {
+        border: none;
+        font-size: 18px;
+        width: 150px;
+        height: 50px;
+        background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+        border-radius: 8px;
+    }
 }

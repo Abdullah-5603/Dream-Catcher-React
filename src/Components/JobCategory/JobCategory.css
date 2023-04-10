@@ -8,6 +8,16 @@
     margin-bottom: -10px;
 }
 .job-category div{
-    display: flex;
-    
+    display: flex;    
+}
+@media (max-width: 576px) {
+    .job-category h1{
+        font-size: 30px;
+    }
+    .job-category div{
+        flex-direction: column;    
+    }
+    .job-category p{
+        font-size: 15px;
+    }
 }
