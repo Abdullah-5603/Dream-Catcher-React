@@ -12,6 +12,7 @@ import Main from './Components/Layout/Main';
 import Home from './Components/Home/Home';
 import JobDetails from './Components/JobDetails/JobDetails';
 import { jobCartLoader, jobLoader } from './utilities/fakedb';
+import NotFoundPage from './Components/NotFoundPage/NotFoundPage';
 
 
 
@@ -41,7 +42,11 @@ const router = createBrowserRouter([
       {
         path: 'jobDetails/:jId',
         element: <JobDetails></JobDetails>,
-        // loader: ({params}) => jobLoader(params.jId)
+        loader: ({params}) => jobLoader(params.jId)
+      },
+      {
+        path: '*',
+        element: <NotFoundPage></NotFoundPage>
       }
     ]
   }

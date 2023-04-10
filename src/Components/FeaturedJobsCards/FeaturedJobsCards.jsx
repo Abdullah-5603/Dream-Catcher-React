@@ -3,7 +3,9 @@ import { Link } from 'react-router-dom';
 import './FeaturedJobsCards.css'
 import { MapPinIcon, CurrencyDollarIcon} from '@heroicons/react/24/solid'
 
-const FeaturedJobsCards = ({job, handleViewDetails}) => {
+
+const FeaturedJobsCards = ({job}) => {
+
     return (
         <div className='job-info'>
             <img src={job.companyLogo} alt="" />
@@ -17,7 +19,7 @@ const FeaturedJobsCards = ({job, handleViewDetails}) => {
                 <p><MapPinIcon className='icon'></MapPinIcon>{job.location}</p>
                 <p><CurrencyDollarIcon className='icon'></CurrencyDollarIcon>{job.salary}</p>
             </div>
-            <Link className='view-btn' to={`/jobDetails/${job.id}`}><button onClick={() => handleViewDetails(job)}>View Details</button></Link>
+            <Link className='view-btn' to={`/jobDetails/${job.id}`}><button>View Details</button></Link>
         </div>
     );
 };

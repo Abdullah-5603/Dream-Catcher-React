@@ -4,7 +4,7 @@ import './ActiveLink.css'
 
 const ActiveLink = ({ children, to }) => {
     return (
-        <NavLink exact to={to} activeClassName="active" className="link">{children}</NavLink>
+        <NavLink to={to} activeClassName='active' className="link">{children}</NavLink>
     );
 };
 

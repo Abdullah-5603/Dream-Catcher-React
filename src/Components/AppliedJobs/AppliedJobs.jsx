@@ -5,12 +5,12 @@ import './AppliedJobs.css';
 
 const AppliedJobs = () => {
   const data = useLoaderData();
+  // console.log(data)
   const [remoteOrOnsiteJobs, setRemoteOrOnsiteJobs] = useState([]);
 
   const handleRemoteSort = (remote) => {
     const jobs = data.filter((job) => job.remoteOrOnsite === remote);
     setRemoteOrOnsiteJobs(jobs);
-    console.log(jobs)
   };
 
   return (
