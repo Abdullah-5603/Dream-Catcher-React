@@ -9,7 +9,7 @@ const Header = () => {
                 <p>Explore thousands of job opportunities with all the information you need. Its your future. Come find it. Manage all your job application from start to finish.</p>
                 <button>Get Started</button>           
             </div>
-            <img src="./src/assets/Images/All Images/P3OLGJ1.png" alt="" />
+            <img src="https://raw.githubusercontent.com/shaumicwc/image-url-maker/main/Images/All%20Images/P3OLGJ1.png" alt="" />
         </div>
     );
 };

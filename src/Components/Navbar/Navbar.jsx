@@ -4,7 +4,7 @@ import { BarsArrowDownIcon, BarsArrowUpIcon } from '@heroicons/react/24/solid';
 import './Navbar.css'
 import { useLocation } from 'react-router-dom';
 
-const Header = () => {
+const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const location = useLocation();
@@ -56,4 +56,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Navbar;

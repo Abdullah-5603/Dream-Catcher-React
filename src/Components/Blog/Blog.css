@@ -1,0 +1,27 @@
+.blog-container {
+    padding-top: 2%;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.question {
+    color: #ef4444;
+    font-size: 22px;
+    font-weight: 900;
+    font-family: sans-serif;
+    margin-bottom: 10px;
+}
+
+.qus {
+    font-size: 18px;
+    font-weight: 900;
+    font-family: monospace;
+}
+
+.answer {
+    font-size: 18px;
+    font-weight: 900;
+    font-family: sans-serif;
+    color: #047857;
+    margin-bottom: 20px;
+}

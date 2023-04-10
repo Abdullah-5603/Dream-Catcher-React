@@ -15,6 +15,7 @@ import { jobCartLoader, jobLoader } from './utilities/fakedb';
 
 
 
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -38,9 +39,9 @@ const router = createBrowserRouter([
         element: <Blog></Blog>
       },
       {
-        path: 'jobDetails',
+        path: 'jobDetails/:jId',
         element: <JobDetails></JobDetails>,
-        loader: jobLoader
+        // loader: ({params}) => jobLoader(params.jId)
       }
     ]
   }

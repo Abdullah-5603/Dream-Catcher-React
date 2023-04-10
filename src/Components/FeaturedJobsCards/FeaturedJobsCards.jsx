@@ -17,7 +17,7 @@ const FeaturedJobsCards = ({job, handleViewDetails}) => {
                 <p><MapPinIcon className='icon'></MapPinIcon>{job.location}</p>
                 <p><CurrencyDollarIcon className='icon'></CurrencyDollarIcon>{job.salary}</p>
             </div>
-            <Link className='view-btn' to='/jobDetails'><button onClick={() => handleViewDetails(job)}>View Details</button></Link>
+            <Link className='view-btn' to={`/jobDetails/${job.id}`}><button onClick={() => handleViewDetails(job)}>View Details</button></Link>
         </div>
     );
 };

@@ -19,7 +19,7 @@
     },
     {
         "id": "TESLA456",
-        "companyLogo": "/src/assets/Images/All Images/tesla-9 1.png",
+        "companyLogo": "https://raw.githubusercontent.com/shaumicwc/image-url-maker/main/Images/All%20Images/tesla-9%201.png",
         "jobTitle": "Electrical Engineer",
         "companyName": "Tesla",
         "remoteOrOnsite": "Onsite",

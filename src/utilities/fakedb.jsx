@@ -1,15 +1,21 @@
-const jobLoader = async () => {
-    const loadedJobs = await fetch('Featured.json')
-    const jobs = await loadedJobs.json();
+// const jobLoader = async (id) => {
+//     const loadedJobs = await fetch('Featured.json')
+//     const jobs = await loadedJobs.json();
 
-    const storedJobCart = localStorage.getItem('job');
-    let savedCart;
+//     const storedJobCart = localStorage.getItem('job');
+//     let savedCart;
 
-    const addedJob = jobs.find(job => job.id === JSON.parse(storedJobCart));
-    if (addedJob) {
-        savedCart = addedJob;
-    }
-    return savedCart;
+//     const addedJob = jobs.find(job => job.id === JSON.parse(storedJobCart));
+//     if (addedJob) {
+//         savedCart = addedJob;
+//     }
+//     return savedCart;
+// }
+const jobLoader = async (id) => {
+        const loadedJobs = await fetch('Featured.json')
+        const jobs = await loadedJobs.json();
+        const job = jobs.find(job => job.id === id);
+        return job;
 }
 
 const jobCartLoader = async () => {
