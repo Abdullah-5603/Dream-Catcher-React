@@ -1,92 +1,113 @@
-.nav {
+nav{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
-
-.statistics {
-    display: flex;
-    justify-content: space-between;
-}
-
-.appliedJobs {
-    display: flex;
-    justify-content: space-between;
-}
-
-.blog {
-    display: flex;
-    justify-content: space-between;
-}
-.job-Details{
-    display: flex;
-    justify-content: space-between;
-}
-.header-img-1 {
-    width: 200px;
-    height: 200px;
-}
-
-.header-img-2 {
-    width: 200px;
-    height: 200px;
-}
-
-.navbar {
+.large-device-nav{
     width: 90%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.navbarS {
-    margin-top: -100px;
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-.navbar-link {
-    width: 100%;
-    display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
 }
-
-.home-link {
-    text-decoration: none;
+.header-logo {
     color: black;
-    font-weight: 800;
-    font-size: 30px;
-    line-height: 30px;
+    font-size: 40px;
+    line-height: 20px;
+}
+.header-logo-mobile{
+    display: none;
+}
+.header-links {
+    display: flex;
+    list-style: none;
 }
 
-.navbar-link div a {
+.header-links li {
+    margin-right: 20px;
+}
+
+.header-links a {
     margin: 0 5px;
     padding: 5px;
     text-decoration: none;
     color: #757575;
     font-size: 18px;
+    font-weight: bold;
 }
 
-.navbar-link button {
-    font-size: 16px;
-    border: none;
-    padding: 15px 20px;
-    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
-    border-radius: 8px;
-}
-
-.navbar-link div a:hover {
+.header-links a:hover {
     color: #6173ec;
     transition: 0.5s;
 }
 
+.header-button {
+    background-color: #645cff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 20px;
+    padding: 15px;
+}
+
+.header-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.header-icon {
+    height: 24px;
+    width: 24px;
+}
 .nav-tag {
     font-weight: 700;
     font-size: 30px;
-    margin-top: 50px;
-    margin-bottom: -80px;
+}
+
+@media (max-width: 568px) {
+    .large-device-nav{
+        display: none;
+    }
+    .header-logo-mobile {
+        display: block;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .header-links-mobile {
+        display: flex;
+        justify-content: flex-end;
+        margin-left: -80px;
+        width: 200px;
+    }
+
+    .nav-container-mobile{
+        width: 90%;
+        margin-left: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-links-mobile ul{
+        width: 200px;
+        padding-left: 0;
+    }
+
+    .header-links-mobile li {
+        list-style: none;
+    }
+    
+    .header-links-mobile a {
+        text-decoration: none;
+        color: #757575;
+        font-size: 15px;
+    }
+    
+    .header-toggle {
+        margin-top: 25px;
+        width: 20px;
+        display: block;
+        cursor: pointer;
+    }
 }

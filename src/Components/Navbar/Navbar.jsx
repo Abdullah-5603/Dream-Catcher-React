@@ -1,40 +1,59 @@
-import React from 'react';
+import React, { useState} from 'react';
+import ActiveLink from '../ActiveLink/ActiveLink';
+import { BarsArrowDownIcon, BarsArrowUpIcon } from '@heroicons/react/24/solid';
 import './Navbar.css'
-import { useLocation, Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
-const Navbar = () => {
-    const location = useLocation();
-    const isJobDetailsActive = location.pathname === '/jobDetails'
-    const isStatisticsActive = location.pathname === '/statistics';
-    const isAppliedJobsActive = location.pathname === '/appliedJobs';
-    const isBlogActive = location.pathname === '/blog';
+const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
-    return (
-         <nav className={isStatisticsActive === true ? 'statistics' : isAppliedJobsActive === true ? 'appliedJobs' : isBlogActive === true ? 'blog' : isJobDetailsActive === true ? 'job-Details' :'nav'}>
-             {
-                isAppliedJobsActive || isJobDetailsActive || isBlogActive || isStatisticsActive === true ? <img className='header-img-1' src="./src/assets/Images/All Images/Vector.png" alt="" /> : ''
-            }
-            <div className={isAppliedJobsActive || isJobDetailsActive || isBlogActive || isStatisticsActive === true ? 'navbarS' : 'navbar'}>
-                <div className='navbar-link'>
-                    <Link className='home-link' to='/'><h1>Dream Catcher</h1></Link>
-                    <div>
-                        <Link to='/statistics'>Statistics</Link>
-                        <Link to='/appliedJobs'>Applied Jobs</Link>
-                        <Link to='/blog'>Blog</Link>
-                    </div>
-                    <button>Start Applying</button>
-                </div>
-                <div className='nav-tag'>
-                    {
-                        isStatisticsActive === true ? 'Statistics' : isAppliedJobsActive === true ? 'Applied Jobs' : isBlogActive === true ? 'Blog' : isJobDetailsActive === true ? 'Job Details' : '' 
-                    }
-                </div>
+  const location = useLocation();
+  const isJobDetailsActive = location.pathname === '/jobDetails'
+  const isStatisticsActive = location.pathname === '/statistics';
+  const isAppliedJobsActive = location.pathname === '/appliedJobs';
+  const isBlogActive = location.pathname === '/blog';
+
+  const handleToggle = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <nav>
+      <div className='large-device-nav'>
+        <h3 className="header-logo">Dream Catcher</h3>
+        <ul className="header-links">
+          <li><ActiveLink to="/">Home</ActiveLink></li>
+          <li><ActiveLink to="/statistics">Statistics</ActiveLink></li>
+          <li><ActiveLink to="/appliedJobs">Applied Jobs</ActiveLink></li>
+          <li><ActiveLink to="/blog">Blog</ActiveLink></li>
+        </ul>
+        <button className="header-button">Start Applying</button>
+      </div>
+      <div className='nav-container-mobile'>
+        <h3 className="header-logo-mobile">Dream Catcher</h3>
+        <span className="header-toggle" onClick={handleToggle}>
+          {isOpen ? (
+            <BarsArrowUpIcon className="header-icon" />
+          ) : (
+            <BarsArrowDownIcon className="header-icon" />
+          )}
+          {isOpen && (
+            <div className="header-links-mobile">
+              <ul>
+                <li><ActiveLink to="/" onClick={handleToggle}>Home</ActiveLink></li>
+                <li><ActiveLink to="/statistics" onClick={handleToggle}>Statistics</ActiveLink></li>
+                <li><ActiveLink to="/appliedJobs" onClick={handleToggle}>Applied Jobs</ActiveLink></li>
+                <li><ActiveLink to="/blog" onClick={handleToggle}>Blog</ActiveLink></li>
+              </ul>
             </div>
-            {
-                isAppliedJobsActive || isJobDetailsActive || isBlogActive || isStatisticsActive === true ? <img className='header-img-2' src="./src/assets/Images/All Images/Vector-1.png" alt="" /> : ''
-            }
-        </nav>
-    );
+          )}
+        </span>
+      </div>
+      <h3 className='nav-tag'>{
+        isStatisticsActive === true ? 'Statistics' : isAppliedJobsActive === true ? 'Applied Jobs' : isBlogActive === true ? 'Blog' : isJobDetailsActive === true ? 'Job Details' : '' 
+        }</h3>
+    </nav>
+  );
 };
 
-export default Navbar;
+export default Header;
