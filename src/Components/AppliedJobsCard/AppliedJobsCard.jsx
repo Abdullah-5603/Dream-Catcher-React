@@ -5,6 +5,9 @@ import { Link } from 'react-router-dom';
 
 const AppliedJobsCard = ({singleData}) => {
     const {fullTimeOrPartTime, remoteOrOnsite, companyName, companyLogo, salary, jobTitle, location} = singleData;
+
+    
+
     return (
         <div className='applied-jobs-card'>
             <img src={companyLogo} alt="" />

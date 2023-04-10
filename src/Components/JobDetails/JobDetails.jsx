@@ -7,7 +7,6 @@ import { addJobsToDb } from '../../utilities/fakedb';
 const JobDetails = () => {
     const data = useLoaderData();
     const {jobDescription, jobResponsibility, educationalRequirements, experiences, salary, jobTitle, location} = data
-    console.log(data)
 
     const handleAddToStorage = job => {
         addJobsToDb(job.id)
