@@ -9,10 +9,9 @@ import Statistics from './Components/Statistics/Statistics';
 import AppliedJobs from './Components/AppliedJobs/AppliedJobs';
 import Blog from './Components/Blog/Blog';
 import Main from './Components/Layout/Main';
-import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
 import JobDetails from './Components/JobDetails/JobDetails';
-import { jobLoader } from './utilities/fakedb';
+import { jobCartLoader, jobLoader } from './utilities/fakedb';
 
 
 
@@ -31,7 +30,8 @@ const router = createBrowserRouter([
       },
       {
         path: 'appliedJobs',
-        element: <AppliedJobs></AppliedJobs>
+        element: <AppliedJobs></AppliedJobs>,
+        loader: jobCartLoader
       },
       {
         path: 'blog',

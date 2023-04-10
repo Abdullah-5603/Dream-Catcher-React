@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import './FeaturedJobs.css'
 import FeaturedJobsCards from '../FeaturedJobsCards/FeaturedJobsCards';
-import {  addToDb, getJobCart } from '../../utilities/fakedb';
+import { addToDb} from '../../utilities/fakedb';
 
 const FeaturedJobs = () => {
     const [jobs, setJobs] = useState([]);
     useEffect(() => {
         fetch('Featured.json')
-        .then(res => res.json())
-        .then(data => setJobs(data))
-    },[])
+            .then(res => res.json())
+            .then(data => setJobs(data))
+    }, [])
 
     const handleViewDetails = (job) => {
         addToDb(job.id)
@@ -22,12 +22,12 @@ const FeaturedJobs = () => {
                 {
                     jobs.map(job => <FeaturedJobsCards
                         handleViewDetails={handleViewDetails}
-                    key={job.id}
-                    job={job}
+                        key={job.id}
+                        job={job}
                     ></FeaturedJobsCards>)
                 }
             </div>
-            
+
         </div>
     );
 };

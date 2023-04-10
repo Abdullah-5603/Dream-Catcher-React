@@ -1,0 +1,19 @@
+.applied-jobs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+.sort-btn{
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+}
+.sort-btn button{
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #7E90FE;
+}
