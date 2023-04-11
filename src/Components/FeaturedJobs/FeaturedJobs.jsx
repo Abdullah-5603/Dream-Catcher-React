@@ -13,6 +13,8 @@ const FeaturedJobs = () => {
     }, [])
 
     const handleSeeAllJobs = () => {
+        const seeAllBtn = document.getElementById('see-all-btn');
+        seeAllBtn.style.display = 'none';
         fetch('Featured.json')
             .then(res => res.json())
             .then(data => setAllJobs(data));
@@ -32,7 +34,7 @@ const FeaturedJobs = () => {
                     />)
                 }
             </div>
-            <button onClick={handleSeeAllJobs}>See all jobs</button>
+            <button id='see-all-btn' onClick={handleSeeAllJobs}>See all jobs</button>
         </div>
     );
 };

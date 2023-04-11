@@ -1,18 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
 import './JobDetails.css';
 import { MapPinIcon, CurrencyDollarIcon, CalendarDaysIcon, PhoneIcon, EnvelopeIcon } from '@heroicons/react/24/solid'
-import { addJobsToDb } from '../../utilities/fakedb';
+import { addJobsToDb} from '../../utilities/fakedb';
 
 const JobDetails = () => {
     const data = useLoaderData();
+
     const {jobDescription, jobResponsibility, educationalRequirements, experiences, salary, jobTitle, location} = data
 
     const handleAddToStorage = job => {
-        addJobsToDb(job.id)
-    }
-    
-
+          addJobsToDb(job.id);     
+      }
+      
     return (
         <div className='jobDetails'>
             <div className='jobInfo'>

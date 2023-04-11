@@ -90,7 +90,7 @@ nav{
         justify-content: space-between;
     }
     .header-links-mobile ul{
-        width: 200px;
+        width: auto;
         padding-left: 0;
     }
 
@@ -106,7 +106,6 @@ nav{
     
     .header-toggle {
         margin-top: 25px;
-        width: 20px;
         display: block;
         cursor: pointer;
     }

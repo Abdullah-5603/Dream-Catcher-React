@@ -1,12 +1,12 @@
 const jobLoader = async (id) => {
-    const loadedJobs = await fetch('Featured.json');
+    const loadedJobs = await fetch('/Featured.json');
     const jobs = await loadedJobs.json();
     const job = jobs.find(job => job.id === id);
     return job;
   }
   
 const jobCartLoader = async () => {
-    const loadedJobs = await fetch('/public/Featured.json');
+    const loadedJobs = await fetch('/Featured.json');
     const jobs = await loadedJobs.json();
 
     const storedJobCart = getJobsCart();
@@ -39,5 +39,6 @@ const getJobsCart = () => {
 export {
     jobLoader,
     addJobsToDb,
-    jobCartLoader
+    jobCartLoader,
+    getJobsCart
 };

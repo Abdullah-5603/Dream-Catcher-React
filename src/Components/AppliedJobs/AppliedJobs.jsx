@@ -5,7 +5,6 @@ import './AppliedJobs.css';
 
 const AppliedJobs = () => {
   const data = useLoaderData();
-  // console.log(data)
   const [remoteOrOnsiteJobs, setRemoteOrOnsiteJobs] = useState([]);
 
   const handleRemoteSort = (remote) => {
