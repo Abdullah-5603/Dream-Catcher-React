@@ -47,11 +47,11 @@ const Navbar = () => {
               </ul>
             </div>
           )}
-        </span>
+          </span>
       </div>
       <h3 className='nav-tag'>{
         isStatisticsActive === true ? 'Statistics' : isAppliedJobsActive === true ? 'Applied Jobs' : isBlogActive === true ? 'Blog' : isJobDetailsActive === true ? 'Job Details' : '' 
-        }</h3>
+      }</h3>
     </nav>
   );
 };

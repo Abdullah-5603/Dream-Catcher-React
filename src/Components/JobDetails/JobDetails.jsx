@@ -3,14 +3,21 @@ import { Link, useLoaderData } from 'react-router-dom';
 import './JobDetails.css';
 import { MapPinIcon, CurrencyDollarIcon, CalendarDaysIcon, PhoneIcon, EnvelopeIcon } from '@heroicons/react/24/solid'
 import { addJobsToDb} from '../../utilities/fakedb';
+import { toast } from 'react-toastify';
 
 const JobDetails = () => {
     const data = useLoaderData();
 
-    const {jobDescription, jobResponsibility, educationalRequirements, experiences, salary, jobTitle, location} = data
-
+    const {jobDescription, jobResponsibility, educationalRequirements, experiences, salary, jobTitle, location} = data;
+    
     const handleAddToStorage = job => {
-          addJobsToDb(job.id);     
+        const storedJobs = JSON.parse(localStorage.getItem('job-cart'));
+        if (typeof storedJobs === 'object' && storedJobs.hasOwnProperty(job.id)) {
+          toast('Job already in local storage');
+        } else {
+            toast('Thanks for applying')
+          addJobsToDb(job.id);
+        }
       }
       
     return (

@@ -9,7 +9,7 @@ const FeaturedJobs = () => {
     useEffect(() => {
         fetch('Featured.json')
             .then(res => res.json())
-            .then(data => setJobs(data.slice(0, 4)))
+            .then(data => setJobs(data.slice(0, 6)))
     }, [])
 
     const handleSeeAllJobs = () => {

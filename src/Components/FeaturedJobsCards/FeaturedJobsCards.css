@@ -9,6 +9,7 @@
 .job-info img{
     width: 100px;
     height: 100px;
+    background-color: white;
 }
 .job-info h3{
     margin: 10px 0 -12px 0;
