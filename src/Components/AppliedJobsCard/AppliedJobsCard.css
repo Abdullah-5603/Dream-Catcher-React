@@ -25,3 +25,22 @@
     display: flex;
     align-content: center;
 }
+@media (max-width: 576px) {
+    .applied-jobs-card{
+        width: 90%;
+        margin-top: 20px;
+    }
+    .applied-jobs-card img{
+        width: 70px;
+        height: 70px;
+        padding: 7px;
+        margin: 7px;
+    }
+    .applied-jobs-card-info{
+        margin-left: 10px;
+        line-height: 0;
+    }
+    .text-icon{
+        margin-right: 15px;
+    }
+}

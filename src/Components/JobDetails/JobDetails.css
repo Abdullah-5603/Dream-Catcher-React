@@ -40,5 +40,38 @@ h4 {
     margin-top: 10px;
     font-size: 18px;
     background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+    color: white;
     border-radius: 8px;
+}
+@media (max-width: 576px) {
+    .jobDetails {
+        flex-direction: column;
+        margin: 20px 30px;
+    }  
+    .jobInfo {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+    p{
+        font-size: 15px;
+        line-height: 18px;
+    }
+    h4 {
+        font-size: 17px;
+    }
+    
+    .jobInfo span {
+        font-size: 17px;
+    }
+    
+    .card-text {
+        line-height: 0;
+        padding: 15px;
+        background: linear-gradient(90deg, rgba(126, 144, 254, 0.1) 0%, rgba(152, 115, 255, 0.1) 100%);
+        border-radius: 10px;
+    }
+    .icon-text {
+        display: flex;
+    }
+
 }

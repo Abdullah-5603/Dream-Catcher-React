@@ -16,4 +16,16 @@
     font-size: 16px;
     padding: 10px 20px;
     background-color: #7E90FE;
+    color: white;
+}
+@media (max-width: 576px) {
+    .applied-jobs{
+        margin: 20px 10px;
+    }
+    .sort-btn{
+        width: 100%;
+    }
+    .sort-btn button{
+        font-size: 14px;
+    }
 }
